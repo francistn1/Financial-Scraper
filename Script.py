@@ -5,7 +5,7 @@ def get_stock_data(ticker):
     stock = yf.Ticker(ticker)
 
     # historical market data
-    df = stock.history(period="1mo")
+    df = stock.history(period="1y")
 
     return df
 
